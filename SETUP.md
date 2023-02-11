@@ -13,7 +13,7 @@ git remote add origin https://github.com/error-four-o-four/utils-fuu.git
 git push -u origin main
 ```
 
-- [ ] Install and config prettier and eslint
+- [x] Install and config prettier and eslint
 - [ ] Library Mode - <https://vitejs.dev/guide/build.html#library-mode>
 - [ ] Lint Staged - <https://github.com/okonet/lint-staged#Configuration>
 - [ ] Git precommit hook - <https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks>
@@ -27,6 +27,7 @@ git push -u origin main
 - <https://github.com/prettier/eslint-config-prettier/>
 - <https://www.npmjs.com/package/eslint-config-airbnb-typescript>
 
+- <https://medium.com/@ErikKyleNielsen/setting-up-eslint-prettier-airbnb-base-and-typescript-27b3f9538f0d>
 - <https://www.interactstudio.co.uk/articles/configure-eslint-and-prettier-for-a-new-vite-project/>
 - <https://blog.logrocket.com/linting-typescript-eslint-prettier/>
 
