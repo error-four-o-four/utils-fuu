@@ -2,12 +2,26 @@
   "name": "utils-fuu",
   "private": true,
   "version": "0.0.0",
+  "description": "A library fo frequently used utilities.",
+  "keywords": [
+    "typescript",
+    "utilities",
+    "utils"
+  ],
+  "author": "errot-four-o-four",
+  "license": "MIT",
+
+  "main": "index.js",
   "type": "module",
+  "types": "",
+
+  "exports": {
+    "import": "",
+    "require": ""
+  },
+
   "scripts": {
-    "dev": "vite",
-    "lint": "eslint --fix . && prettier -w .",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "node ./build.packages.js"
   },
   "devDependencies": {
     "@types/node": "^18.13.0",
@@ -20,7 +34,7 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.4",
-    "typescript": "^4.9.3",
-    "vite": "^4.1.0"
+    "tsup": "^6.6.0",
+    "typescript": "^4.9.5"
   }
 }
