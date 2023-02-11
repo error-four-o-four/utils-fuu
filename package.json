@@ -8,18 +8,18 @@
     "utilities",
     "utils"
   ],
-  "author": "errot-four-o-four",
+  "author": "error-four-o-four",
   "license": "MIT",
-
-  "main": "index.js",
+  "main": "packages/fuu/dist/index.js",
   "type": "module",
-  "types": "",
-
+  "types": "packages/fuu/dist/index.d.ts",
+  "files": [
+    "packages/fuu/dist/*"
+  ],
   "exports": {
-    "import": "",
-    "require": ""
+    "import": "./packages/fuu/dist/index.js",
+    "require": "./packages/fuu/dist/index.cjs"
   },
-
   "scripts": {
     "build": "node ./build.packages.js"
   },
@@ -38,3 +38,4 @@
     "typescript": "^4.9.5"
   }
 }
+

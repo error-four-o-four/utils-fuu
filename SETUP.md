@@ -14,7 +14,10 @@ git push -u origin main
 ```
 
 - [x] Install and config prettier and eslint
-- [ ] Library Mode - <https://vitejs.dev/guide/build.html#library-mode>
+- [ ] ~~Library Mode - <https://vitejs.dev/guide/build.html#library-mode>~~
+- [x] Library Build tsup - <https://www.npmjs.com/package/tsup>
+  - [ ] create package.json files
+  - [ ] rewrite main package "fuu" and import other packages as dependencies
 - [ ] Lint Staged - <https://github.com/okonet/lint-staged#Configuration>
 - [ ] Git precommit hook - <https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks>
 - [ ] Documentation (maybe Typedoc)
@@ -33,6 +36,10 @@ git push -u origin main
 
 ### Library Mode
 
-- <https://vitejs.dev/guide/build.html#library-mode>
-- <https://www.raulmelo.dev/blog/build-javascript-library-with-multiple-entry-points-using-vite-3>
-- <https://github.com/vitejs/vite/discussions/1736>
+npm packages have a seperate folder with their own "dist" folder.\
+
+`npm run build` script to build each package
+
+- <https://www.npmjs.com/package/tsup>
+- <https://tsup.egoist.dev/#typescript--javascript>
+- <https://paka.dev/npm/tsup@6.6.0/api#8b657050f887daed>
