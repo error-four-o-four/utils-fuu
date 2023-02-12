@@ -1,6 +1,6 @@
 # @fuus/main
 
-`@fuus/main` is a package from `@http404/fuu`
+![npm](https://img.shields.io/npm/v/@fuus/main?style=flat-square) ![npm bundle size](https://img.shields.io/bundlephobia/min/@fuus/main?label=minified&style=flat-square) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@fuus/main?label=zipped&style=flat-square)
 
 ## Example
 
