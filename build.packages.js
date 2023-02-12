@@ -1,7 +1,17 @@
 import { build } from 'tsup';
-import { readdirSync } from 'fs';
+import process from 'node:process';
+import { existsSync, readdirSync } from 'node:fs';
 
-const directories = readdirSync('./packages');
+const directories =
+  process.argv.length >= 2
+    ? [...process.argv.slice(2)]
+    : readdirSync('./packages');
+
+console.log(
+  `Attempting to build package${
+    directories.length === 1 ? '' : 's'
+  }: ${directories.join(', ')}`
+);
 
 const defaultOptions = {
   clean: true,
@@ -16,8 +26,15 @@ const defaultOptions = {
 };
 
 for (const name of directories) {
-  const entry = [`./packages/${name}/index.ts`];
-  const outDir = `./packages/${name}/dist`;
+  const directory = `./packages/${name}`;
+
+  if (!existsSync(directory)) {
+    console.warn(`No such package found: ${name}`);
+    continue;
+  }
+
+  const entry = [`${directory}/index.ts`];
+  const outDir = `${directory}/dist`;
 
   const options = {
     ...defaultOptions,
