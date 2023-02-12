@@ -15,7 +15,7 @@ git push -u origin main
 - [x] ~~Library Mode [vite.js](https://vitejs.dev/guide/build.html#library-mode>)~~ Build Library with [tsup](https://www.npmjs.com/package/tsup)
   - [ ] create package.json files
   - [ ] rewrite main package "fuu" and import other packages as dependencies
-  - [ ] reconsider npm namespace (@http404/fuu => @fuu)
+  - [x] reconsider npm namespace (@http404/fuu => @fuus)
 - [x] Build demos - commonjs, client (parcel)
   - [x] use npm link
   - [ ] use published package

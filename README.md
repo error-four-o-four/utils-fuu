@@ -1,1 +1,1 @@
-# fuu - Frequently Used Utilities
+# fuus - Frequently Used UtilitieS
