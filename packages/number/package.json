@@ -1,6 +1,6 @@
 {
-  "name": "@http404/fuu-number",
-  "version": "0.0.0",
+  "name": "@fuus/number",
+  "version": "0.0.1",
   "description": "A library fo frequently used utilities.",
   "keywords": [
     "utilities",
@@ -17,5 +17,12 @@
   "exports": {
     "import": "./dist/index.js",
     "require": "./dist/index.cjs"
+  },
+
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup index.ts --config \"../../tsup.config.js\""
   }
 }
