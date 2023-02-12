@@ -1,11 +1,11 @@
-# @fuu/main
+# @fuus/main
 
-`@fuu/main` is a package from `@http404/fuu`
+`@fuus/main` is a package from `@http404/fuu`
 
 ## Example
 
 ```js
-import { delay } from '@fuu/main'
+import { delay } from '@fuus/main'
 delay(() => console.log('👋'), 500);
 ```
 
