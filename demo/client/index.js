@@ -1,6 +1,3 @@
-import fuu from '../packages/fuu/dist/index.js';
-import { arrayFromRange } from '../packages/array/dist/index.js';
-
-console.log(fuu.number.randomInt(10));
+import { arrayFromRange } from '@http404/fuu-array';
 
 console.log(arrayFromRange(10));
