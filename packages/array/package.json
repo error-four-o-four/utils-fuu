@@ -1,6 +1,6 @@
 {
-  "name": "@http404/fuu-array",
-  "version": "0.0.0",
+  "name": "@fuus/array",
+  "version": "0.0.1",
   "description": "A library fo frequently used utilities.",
   "keywords": [
     "utilities",
