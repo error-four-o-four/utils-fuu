@@ -16,12 +16,13 @@
     "noImplicitReturns": true,
     "skipLibCheck": true,
 
+    "allowJs": false,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
 
+    "importHelpers": true,
     "declaration": true,
     "sourceMap": false,
-    "importHelpers": true,
 
     "baseUrl": "./",
     "paths": {
