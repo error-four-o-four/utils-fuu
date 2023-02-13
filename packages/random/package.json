@@ -1,0 +1,28 @@
+{
+  "name": "@fuus/random",
+  "version": "0.0.1",
+  "description": "A library fo frequently used utilities.",
+  "keywords": [
+    "utilities",
+    "utils"
+  ],
+  "author": "error-four-o-four",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/*"
+  ],
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
+
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup index.ts --config \"../../tsup.config.js\""
+  }
+}
