@@ -5,17 +5,13 @@
 ## Example
 
 ```js
-import { delay } from '@fuus/number'
-delay(() => console.log('👋'), 500);
+import num, { roundNum } from '@fuus/number'
+
+num.round === roundNum // true
+
+let n = 1.23456789;
+roundNum(n) // 1
+num.round(n, 4); // 1.2345;
 ```
 
 ## API
-
-- `delay(fn, ms)`\
-Delays the execution of an asynchronous function.
-
-- `debounce(fn, ms)`\
-Creates a debounced function that delays invoking the provided function until at least ms milliseconds have elapsed since the last time it was invoked.
-
-- `throttle(fn, ms)`\
-Creates a throttled function that only invokes the provided function at most once every defined milliseconds
