@@ -16,9 +16,9 @@
   "rules": {
     "import/no-extraneous-dependencies": "off",
 
-    // "import/extensions": ["error", "always", { "ignorePackages": true }],
-    "import/extensions": "off",
-    // "import/prefer-default-export": "off",
+    "import/extensions": ["error", "always", { "ignorePackages": true }],
+    // "import/extensions": "off",
+    "import/prefer-default-export": "off",
     // "simple-import-sort/imports": "error",
     // "simple-import-sort/exports": "error",
 
@@ -35,7 +35,7 @@
   // used for ts
   "overrides": [
     {
-      "files": ["**/*.js"],
+      "files": ["**/*.ts"],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
         "ecmaVersion": "latest",
@@ -45,14 +45,32 @@
       },
       "plugins": ["@typescript-eslint", "import", "prettier"],
       "extends": [
+        "eslint:recommended",
+        "airbnb-base",
         "airbnb-typescript/base",
-        // "plugin:eslint-plugin/recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
         // "plugin:@typescript-eslint/recommended-requiring-type-checking"
         "prettier"
       ],
       "rules": {
+        "import/no-extraneous-dependencies": "off",
+        // "import/extensions": ["error", "always", { "ignorePackages": true }],
+        "import/extensions": "off",
+        "import/prefer-default-export": "off",
+        // "simple-import-sort/imports": "error",
+        // "simple-import-sort/exports": "error",
+
+        "no-console": 0,
+        "no-nested-ternary": 0,
+        "no-restricted-syntax": "off",
+        "no-unused-vars": [
+          "warn",
+          { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }
+        ],
+
+        "prettier/prettier": ["warn", {}, { "usePrettierrc": true }],
+
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-non-null-assertion": "off",
         "@typescript-eslint/restrict-template-expressions": "off",

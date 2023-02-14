@@ -3,11 +3,7 @@ export const arrayFrom2D = (w: number, h: number, val: unknown = null) =>
     Array.from({ length: w }).fill(val)
   ) as unknown[];
 
-export const arrayFromRange = (
-  max: number,
-  min: number = 0,
-  step: number = 1
-): number[] =>
+export const arrayFromRange = (max: number, min = 0, step = 1): number[] =>
   Array.from(
     { length: Math.ceil(max - min + 1) / step },
     (_, i) => i * step + min

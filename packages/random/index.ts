@@ -1,15 +1,3 @@
-export { randomInt } from './src/randomInt';
-export { randomFloat } from './src/randomFloat';
-export { randomRadians } from './src/randomRadians';
-
-export { maybe } from './src/maybe';
-export { randomFrom } from './src/randomFrom';
-
-export { randomRgb } from './src/randomRgb';
-export { randomHex } from './src/randomHex';
-export { randomHsl } from './src/randomHsl';
-
-// namespace
 import { randomInt as int } from './src/randomInt';
 import { randomFloat as float } from './src/randomFloat';
 import { randomRadians as radians } from './src/randomRadians';
@@ -31,3 +19,14 @@ export default {
   hex,
   hsl,
 };
+
+export { randomInt } from './src/randomInt';
+export { randomFloat } from './src/randomFloat';
+export { randomRadians } from './src/randomRadians';
+
+export { maybe } from './src/maybe';
+export { randomFrom } from './src/randomFrom';
+
+export { randomRgb } from './src/randomRgb';
+export { randomHex } from './src/randomHex';
+export { randomHsl } from './src/randomHsl';

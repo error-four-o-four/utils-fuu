@@ -14,7 +14,9 @@ const names =
 const getPackageOptions = (directory) => {
   const entry = [`${directory}/index.ts`];
   const outDir = `${directory}/dist`;
-  const minify = !process.env.NODE_ENV?.startsWith('dev');
+  const minify = process.env.NODE_ENV
+    ? !process.env.NODE_ENV.startsWith('dev')
+    : true;
 
   return {
     ...config,
@@ -46,6 +48,6 @@ const buildPackages = async () => {
   return directories;
 };
 
-const result = await buildPackages();
-
-console.log('Built:', result);
+buildPackages().then((result) => {
+  console.log('Built:', result);
+});

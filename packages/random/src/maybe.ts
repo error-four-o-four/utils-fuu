@@ -1,1 +1,1 @@
-export const maybe = (n: number = 0.5): boolean => n > Math.random();
+export const maybe = (n = 0.5): boolean => n > Math.random();

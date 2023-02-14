@@ -1,2 +1,1 @@
-export const isNum = (val: any): boolean =>
-  typeof val === 'number' && val === val;
+export const isNum = (val: any): boolean => typeof val === 'number';

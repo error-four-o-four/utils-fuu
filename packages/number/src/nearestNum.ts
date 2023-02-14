@@ -1,2 +1,2 @@
-export const nearestNum = (n: number, steps: number = 10): number =>
+export const nearestNum = (n: number, steps = 10): number =>
   Math.round(n * steps) / steps;

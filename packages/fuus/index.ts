@@ -1,9 +1,9 @@
-import array from '../array/index';
-import number from '../number/index';
+import array from '@fuus/array';
+import number from '@fuus/number';
 
-import { delay, debounce, throttle } from '../main';
+import { delay, debounce, throttle } from '@fuus/main';
 
-export * from '../main/index';
+export { delay, debounce, throttle };
 
 export default {
   array,

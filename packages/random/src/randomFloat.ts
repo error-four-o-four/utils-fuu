@@ -1,2 +1,2 @@
-export const randomFloat = (max: number = 1, min: number = 0) =>
+export const randomFloat = (max = 1, min = 0): number =>
   Math.random() * (max - min) + min;
