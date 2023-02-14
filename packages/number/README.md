@@ -5,12 +5,12 @@
 ## Example
 
 ```js
-import num, { roundNum } from '@fuus/number'
+import num, { roundNum } from '@fuus/number';
 
-num.round === roundNum // true
+num.round === roundNum; // true
 
 let n = 1.23456789;
-roundNum(n) // 1
+roundNum(n); // 1
 num.round(n, 4); // 1.2345;
 ```
 

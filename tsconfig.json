@@ -16,7 +16,7 @@
     "noImplicitReturns": true,
     "skipLibCheck": true,
 
-    "allowJs": false,
+    "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
 
@@ -30,6 +30,6 @@
     },
     "outDir": "./dist"
   },
-  "include": ["packages/**/*.ts"],
-  "exclude": ["node_modules", "**/dist/**/*", "demo/**/*js"]
+  "exclude": ["node_modules", "**/dist/**/*"]
+  // "include": ["packages/**/*.ts"]
 }

@@ -21,13 +21,16 @@
     "require": "./packages/fuu/dist/index.cjs"
   },
   "scripts": {
+    "lint:check": "eslint .",
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
     "test": "vitest",
-    "build": "node ./build.packages.js"
+    "build": "node ./tsup.build.js"
   },
   "devDependencies": {
     "@types/node": "^18.13.0",
-    "@typescript-eslint/eslint-plugin": "^5.51.0",
-    "@typescript-eslint/parser": "^5.51.0",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
     "eslint": "^8.34.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
@@ -35,8 +38,8 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.4",
-    "tsup": "^6.6.0",
+    "tsup": "^6.6.2",
     "typescript": "^4.9.5",
-    "vitest": "^0.28.4"
+    "vitest": "^0.28.5"
   }
 }

@@ -5,9 +5,9 @@
 ## Example
 
 ```js
-import random, { randomInt } from '@fuus/random'
+import random, { randomInt } from '@fuus/random';
 
-random.int === randomInt // true
+random.int === randomInt; // true
 
 randomInt(); // returns random integer between 0 and 10
 randomInt(5); // random integer between 0 and 5

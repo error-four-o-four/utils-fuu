@@ -18,7 +18,6 @@
     "import": "./dist/index.js",
     "require": "./dist/index.cjs"
   },
-
   "publishConfig": {
     "access": "public"
   },

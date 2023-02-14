@@ -1,4 +1,5 @@
 /* eslint-env node */
-const { arrayFromRange } = require('@http404/fuu-array');
+// eslint-disable-next-line @typescript-eslint/no-var-requires, import/no-unresolved
+const array = require('@fuus/array');
 
-console.log(arrayFromRange(10));
+console.log(array.fromRange(10));

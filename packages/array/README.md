@@ -5,9 +5,9 @@
 ## Example
 
 ```js
-import array, { arrayFromRange } from '@fuus/array'
+import array, { arrayFromRange } from '@fuus/array';
 
-array.fromRange === arrayFromRange // true
+array.fromRange === arrayFromRange; // true
 
 arrayFromRange(10); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
