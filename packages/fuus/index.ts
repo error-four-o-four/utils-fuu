@@ -1,8 +1,14 @@
 import array from '../array/index';
 import number from '../number/index';
 
-import { delay } from '../core';
+import { delay, debounce, throttle } from '../main';
 
-export * from '../core/index';
+export * from '../main/index';
 
-export default { array, number, delay };
+export default {
+  array,
+  number,
+  delay,
+  debounce,
+  throttle,
+};

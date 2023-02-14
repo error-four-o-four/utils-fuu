@@ -3,31 +3,24 @@ import { build } from 'tsup';
 import process from 'node:process';
 import { existsSync, readdirSync } from 'node:fs';
 
+// eslint-disable-next-line import/extensions
+import config from './tsup.config.js';
+
 const names =
-  process.argv.length >= 2
+  process.argv.length > 2
     ? [...process.argv.slice(2)]
-    : readdirSync('./packages');
-
-const defaultOptions = {
-  clean: true,
-  format: ['esm', 'cjs'],
-
-  tsconfig: './tsconfig.json',
-  dts: true,
-  sourcemap: false,
-  splitting: false,
-  minify: false,
-  // legacyOutput: true,
-};
+    : readdirSync('packages');
 
 const getPackageOptions = (directory) => {
   const entry = [`${directory}/index.ts`];
   const outDir = `${directory}/dist`;
+  const minify = !process.env.NODE_ENV?.startsWith('dev');
 
   return {
-    ...defaultOptions,
+    ...config,
     entry,
     outDir,
+    minify,
   };
 };
 
