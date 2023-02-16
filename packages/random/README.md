@@ -15,3 +15,12 @@ random.int(5, 25); // random integer between 5 and 25
 ```
 
 ## API
+
+- `randomInt: (max?: number, min?: number) => number`
+- `randomInt: (max?: number, min?: number) => number`
+- `randomRadians: () => number`
+- `maybe: (n?: number) => boolean`
+- `randomFrom: (arr: any[]) => any`
+- `randomRgb: () => number[]`
+- `randomHex: () => string`
+- `randomHsl: (s?: number, l?: number) => number[]`

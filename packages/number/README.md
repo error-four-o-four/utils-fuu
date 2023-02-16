@@ -15,3 +15,17 @@ num.round(n, 4); // 1.2345;
 ```
 
 ## API
+
+- `isNum: (val: any) => boolean`
+- `mapNum(n: number, a1: number, b1: number, a2: number, b2: number) => number`
+- `clampNum: (n: number, min: number, max: number) => number`
+- `roundNum: (n: number, decimals?: number) => number`
+- `nearestNum: (n: number, steps?: number) => number`
+
+- `ncos: (n: number) => number` [0, 1]
+- `nsin: (n: number) => number` [0, 1]
+
+- `linear2db: (n: number) => number`
+- `db2linear: (n: number) => number`
+
+- `intFromString: (val: string | null) => number | never`

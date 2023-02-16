@@ -6,7 +6,27 @@
 
 ```js
 import easing from '@fuus/easing';
-
 ```
 
 ## API
+
+- `quadraticIn`\
+  `quadraticOut`\
+  `quadraticInOut`
+- `cubicIn`\
+  `cubicOut`\
+  `cubicInOut`
+- `sineIn`\
+  `sineOut`\
+  `sineInOut`
+- `exponentialIn`\
+  `exponentialOut`\
+  `exponentialInOut`
+- `elasticIn`\
+  `elasticOut`\
+  `elasticInOut`
+- `smoothStep`\
+  `smootherStep`\
+  `overshoot`\
+  `smoothOvershoot`\
+  `cheapStep`

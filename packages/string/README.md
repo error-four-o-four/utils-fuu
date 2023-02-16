@@ -9,3 +9,10 @@ import string from '@fuus/string';
 ```
 
 ## API
+
+- `pluralizeStr: (num: number, single: string, plural?: string) => string`
+- `capitalizeStr: (str: string, lowerRest?: boolean) => string`
+- `compressWhitespace: (str: string) => string`
+- `toCamelCase: (str: string) => string | undefined`
+- `toKebabCase: (str: string) => string | undefined`
+- `toTitleCase: (str: string) => string | undefined`
