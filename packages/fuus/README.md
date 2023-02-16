@@ -5,9 +5,18 @@
 ## Example
 
 ```js
-import fuus from '@http404/fuus';
+import fuus, { Ran } from '@http404/fuus';
+
+Ran.maybe(0.25); // returns true with a chance of 25 %
 ```
 
 ## API
 
-[Array utils](https://github.com/error-four-o-four/utils-fuu/blob/main/packages/array/README.md)
+[General functions](https://github.com/error-four-o-four/utils-fuu/blob/main/packages/main/README.md)
+
+[Array utils](https://github.com/error-four-o-four/utils-fuu/blob/main/packages/array/README.md)\
+[Number utils](https://github.com/error-four-o-four/utils-fuu/blob/main/packages/number/README.md)\
+[String utils](https://github.com/error-four-o-four/utils-fuu/blob/main/packages/string/README.md)
+
+[Random functions](https://github.com/error-four-o-four/utils-fuu/blob/main/packages/random/README.md)\
+[Easing functions](https://github.com/error-four-o-four/utils-fuu/blob/main/packages/easing/README.md)

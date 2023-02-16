@@ -10,6 +10,10 @@
   ],
   "author": "error-four-o-four",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/error-four-o-four/utils-fuu"
+  },
   "main": "packages/fuu/dist/index.js",
   "type": "module",
   "types": "packages/fuu/dist/index.d.ts",
@@ -23,6 +27,7 @@
   "scripts": {
     "lint:check": "eslint .",
     "format:check": "prettier --check .",
+    "lint": "eslint --fix .",
     "format": "prettier --write .",
     "test": "vitest",
     "build:dev": "SET NODE_ENV=dev & node ./tsup.build.js",
