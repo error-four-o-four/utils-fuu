@@ -2,7 +2,7 @@
   "name": "utils-fuu",
   "private": true,
   "version": "0.0.1",
-  "description": "A library fo frequently used utilities.",
+  "description": "A library of frequently used utilities.",
   "keywords": [
     "typescript",
     "utilities",
