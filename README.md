@@ -1,6 +1,6 @@
 # fuus - Frequently Used UtilitieS
 
-![npm](https://img.shields.io/npm/v/@http404/fuus/easing?style=flat-square) ![npm bundle size](https://img.shields.io/bundlephobia/min/@http404/fuus/easing?label=minified&style=flat-square) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@http404/fuus/easing?label=zipped&style=flat-square)
+![npm](https://img.shields.io/npm/v/@http404/fuus?style=flat-square) ![npm bundle size](https://img.shields.io/bundlephobia/min/@http404/fuus?label=minified&style=flat-square) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@http404/fuus?label=zipped&style=flat-square)
 
 ## Example
 

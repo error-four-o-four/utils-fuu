@@ -1,34 +1,31 @@
 {
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "strict": true,
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    // "useDefineForClassFields": true,
-    "lib": ["ESNext", "DOM"],
-    "types": ["node"],
-
-    "noEmit": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "skipLibCheck": true,
-
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-
-    "importHelpers": true,
-    "declaration": true,
-    "sourceMap": false,
-
     "baseUrl": "./",
-    "paths": {
-      "~/*": ["./*"]
-    },
     "outDir": "./dist"
   },
-  "exclude": ["node_modules", "**/dist/**/*"]
+  // tsup doesn't build dts files when composite === true
+  // "references": [
+  //   {
+  //     "path": "./packages/array/"
+  //   },
+  //   {
+  //     "path": "./packages/easing/"
+  //   },
+  //   {
+  //     "path": "./packages/interpolation/"
+  //   },
+  //   {
+  //     "path": "./packages/main/"
+  //   },
+  //   {
+  //     "path": "./packages/number/"
+  //   },
+  //   {
+  //     "path": "./packages/random/"
+  //   },
+  //   {
+  //     "path": "./packages/string/"
+  //   }
+  // ]
 }
